@@ -1,0 +1,72 @@
+.container-conteudo{
+    color: #fff;
+    max-width: 80%;
+    margin: 0 10%;
+}
+.carrousel{
+    z-index: 0;
+
+}
+.slide{
+    z-index: 0;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 5);
+}
+h1{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.image-cover{
+    max-height: 100vh;
+    mask-image:none;
+    image-rendering: auto;
+}
+.container-introducao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    align-items: center;
+}
+.poster-home{
+    max-width: 20%;
+    height: auto;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 5);
+}
+.introducao{
+    margin-top: 100px;
+}
+.texto-introducao{
+    max-width: 60%;
+    text-align: justify;
+    font-size: 17px;
+}
+hr{
+    margin: 50px 0px;
+}
+
+.informacoes-tecnicas .btn{ 
+    border: solid white 1px;
+    width: 100%;
+}
+.container-card-persongens{
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+}
+.card{
+    background-color: #202830;
+
+}
+.card .card-img-top{
+    max-width: 80%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+video{
+    max-width: 100%;
+    height: auto;
+}
