@@ -130,5 +130,6 @@ nav ul li a {
 
 .menu .btn{
   padding: 15px;
-  background-color: #202830;
+  border: solid 2px #202830;
+  height: 70px;
 }
