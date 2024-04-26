@@ -9,5 +9,9 @@ def index():
 def sinopse():
     return render_template('sinopse.html')
 
+@app.route('/personagens')
+def personagens():
+    return render_template('personagens.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
