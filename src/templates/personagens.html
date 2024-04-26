@@ -1,14 +1,15 @@
 {%extends "base.html"%} 
-{%block title%} Personagens {%endblock%} 
+
+{%block title%} Sinopse {%endblock%} 
+
 {%block css%}
-<link
-  rel="stylesheet"
-  href="{{url_for('static', filename='css/stylehome.css')}}"
-/>
-<link
-  rel="stylesheet"
-  href="{{url_for('static', filename='css/stylepersonagens.css')}}"
-/>
+<link rel="stylesheet" href="{{url_for('static', filename='css/stylehome.css')}}"/>
+<link rel="stylesheet"href="{{url_for('static', filename='css/stylepersonagens.css')}}"/>
 {%endblock%} 
+
+{%block header%}
+<li><a href="/"><button type="button" class="btn btn-outline-dark"><img src="https://fontmeme.com/permalink/240426/e4c53e304d5131a96ebf095fbbeddd22.png" alt="fonte-heart-breaking-bad" border="0"></button></a></li>
+{%endblock%}
+
 {%block content%}
 {%endblock%}
