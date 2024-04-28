@@ -1,55 +1,29 @@
-{%extends "base.html"%} 
-{%block title%} Breaking Bad {%endblock%} 
+{%extends "base.html"%}
+{%block title%} Breaking Bad {%endblock%}
 {%block css%}
-<link
-  rel="stylesheet"
-  href="{{url_for('static', filename='css/stylehome.css')}}"
-/>
-{%endblock%} 
+<link rel="stylesheet" href="{{url_for('static', filename='css/stylehome.css')}}" />
+{%endblock%}
 {%block content%}
-<div
-  id="carouselExampleAutoplaying"
-  class="carousel slide"
-  data-bs-ride="carousel"
->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img
-        src="{{url_for('static', filename='images/breaking-bed.jpg')}}"
-        class="d-block w-100 image-cover img-fluid"
-        alt="..."
-      />
+      <img src="{{url_for('static', filename='images/breaking-bed.jpg')}}" class="d-block w-100 image-cover img-fluid"
+        alt="..." />
     </div>
     <div class="carousel-item">
-      <img
-        src="{{url_for('static', filename='images/breakingbadcarrossel2.jpg')}}"
-        class="d-block w-100 image-cover img-fluid"
-        alt="..."
-      />
+      <img src="{{url_for('static', filename='images/breakingbadcarrossel2.jpg')}}"
+        class="d-block w-100 image-cover img-fluid" alt="..." />
     </div>
     <div class="carousel-item">
-      <img
-        src="{{url_for('static', filename='images/carroussel3.jpg')}}"
-        class="d-block w-100 image-cover img-fluid"
-        alt="..."
-      />
+      <img src="{{url_for('static', filename='images/carroussel3.jpg')}}" class="d-block w-100 image-cover img-fluid"
+        alt="..." />
     </div>
   </div>
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-bs-target="#carouselExampleAutoplaying"
-    data-bs-slide="prev"
-  >
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-bs-target="#carouselExampleAutoplaying"
-    data-bs-slide="next"
-  >
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -58,11 +32,7 @@
   <section class="introducao">
     <h1>Breaking Bad</h1>
     <div class="container-introducao">
-      <img
-        src="{{url_for('static', filename='images/poster-bb.jpg')}}"
-        alt=""
-        class="poster-home"
-      />
+      <img src="{{url_for('static', filename='images/poster-bb.jpg')}}" alt="" class="poster-home" />
       <p class="texto-introducao">
         Breaking Bad é uma série de televisão americana criada e produzida por
         Vince Gilligan. Ela retrata a vida do químico Walter White, um homem
@@ -98,8 +68,8 @@
 
   <hr class="linha-separacao" />
 
-  <section class="informacoes-tecnicas">
-    <div class="accordion" id="accordionExample">
+  <!-- <section class="informacoes-tecnicas">
+     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -118,41 +88,45 @@
         </div>
       </div>
   </section>
-  <hr class="linha-separacao">
+  <hr class="linha-separacao"> -->
 
   <div class="container-card-personagens">
-    <a href="#">
-      <!-- <div class="card mb-3">
-      <img src="{{url_for('static', filename='images/breaking-bad-personagens.jpg')}}" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Personagens</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
+    <h1>Personagens principais</h1>
+    <div class="poapo">
+      <div class="img-personagens">
+        <a href="/personagens" class="card-personagens">
+          <div class="card text-bg-dark">
+            <img src="{{url_for('static', filename='images/breaking-bad-personagens.jpg')}}" class="card-img"
+              alt="..." />
+            <div class="card-img-overlay">
+              <h4 class="card-title">Cilque aqui para ver
+                mais sobre os personagens principais dessa obra!</h4>
+            </div>
+          </div>
+        </a>
       </div>
-    </div> -->
-      <div class="card text-bg-dark">
-        <img
-          src="{{url_for('static', filename='images/breaking-bad-personagens.jpg')}}"
-          class="card-img"
-          alt="..."
-        />
-        <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-        </div>
+      <div class="texto-personagens">
+        <p>
+          Considerada uma das melhores séries de TV de todos os tempos, a trama do professor
+          de química fracassado que se
+          torna o maior fabricante de drogas do Novo México é objeto de estudo até hoje, além de ser uma inspiração
+          comum
+          a todo o mundo do entretenimento. Com uma história complexa, humana e riquíssima, uma produção e
+          cinematografia
+          impecáveis, além de um elenco praticamente perfeito, o criador, produtor, roteirista, diretor e gênio Vince
+          Gilligan deu vida a um exército de personagens inesquecíveis, com personalidades únicas.
+        </p>
       </div>
-    </a>
+    </div>
   </div>
 
   <hr class="linha-separacao" />
 
   <section class="treiler-container">
+    <h1>Treiler</h1>
+    <p>Cilque aqui para ver o treiler dessa obra!</p>
     <video poster="{{url_for('static', filename='images/Breaking-Bad-video.webp')}}" width="60%" height="auto" controls>
-      <source src="{{url_for('static', filename='video/BreakingBad _Treiler.mp4')}}"
-        type="video/mp4"/>
+      <source src="{{url_for('static', filename='video/BreakingBad _Treiler.mp4')}}" type="video/mp4" />
     </video>
   </section>
 </div>

@@ -25,19 +25,24 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
 }
 .poster-home{
-    max-width: 20%;
+    max-width: 300px;
     height: auto;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .introducao{
-    margin-top: 100px;
+    margin: 150px 0;
 }
 .texto-introducao{
     max-width: 60%;
+    text-align: justify;
+    font-size: 17px;
+    margin: 5px;
+}
+p{
     text-align: justify;
     font-size: 17px;
 }
@@ -45,23 +50,24 @@ hr{
     margin: 50px 0px;
 }
 
-.informacoes-tecnicas .btn{ 
-    border: solid white 1px;
-    width: 100%;
+.container-card-personagens{
+    margin: 100px 0;
+    flex-wrap: wrap;
 }
-.container-card-persongens{
+.texto-personagens{
+margin-left: 100px ;
+}
+.poapo{
     display: flex;
-    justify-content: center;
-    max-width: 80%;
+    align-items: center;
 }
 .card{
     background-color: #202830;
+}
+.text-bg-dark{
+    width: 600px;
+}
 
-}
-.card .card-img-top{
-    max-width: 80%;
-    height: auto;
-}
 a{
     text-decoration: none;
     color: #fff;
