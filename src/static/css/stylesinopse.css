@@ -38,6 +38,8 @@ h1 {
 .img-season1{
     float: left;
     margin:0 50px 40px 0;
+    max-width: 350px;
+
 }
 .poster-season1{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -47,6 +49,8 @@ h1 {
 .img-season2{
     float: right;
     margin: 0 0 40px 50px;
+    max-width: 650px;
+
 }
 .poster-season2{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
