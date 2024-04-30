@@ -1,3 +1,46 @@
-body{
-    height: 300vh;
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+body {
+  height: auto;
+}
+.container-conteudo {
+    color: #fff;
+    max-width: 80%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+}
+.cover {
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.cover img {
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+  opacity: 85%;
+  background-color: black;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+.titulo-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 10px;
+  font-family: Anton;
+}
+
+.spinner-border{
+    width: 300px;
+    height: 300px;
 }

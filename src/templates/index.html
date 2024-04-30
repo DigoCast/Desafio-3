@@ -62,33 +62,13 @@
         TVséries e MOV. No Brasil, o seriado é exibido pelo canal pago AXN e
         pelo serviço de streaming Netflix e, na TV aberta, foi exibida pela Rede
         Record e pela Band.
+        <br><br>  
+        <a href="/sinopse">Clique aqui para ver sinopse da serie completa</a>
       </p>
     </div>
   </section>
 
   <hr class="linha-separacao" />
-
-  <!-- <section class="informacoes-tecnicas">
-     <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-  </section>
-  <hr class="linha-separacao"> -->
 
   <div class="container-card-personagens">
     <h1>Personagens principais</h1>
@@ -122,13 +102,22 @@
 
   <hr class="linha-separacao" />
 
-  <section class="treiler-container">
-    <h1>Treiler</h1>
-    <p>Cilque aqui para ver o treiler dessa obra!</p>
+  <h1>Trailer</h1>
+
+  <div class="treiler-container">
+
+    <div class="image-netflix">
+      <a href="https://www.netflix.com/watch/70143836?source=35" target="_blank">
+        <img src="{{url_for('static', filename='images/Netflix_icon.svg.png')}}" alt="" class="image-netflix">
+      </a>
+    </div>
+
+
     <video poster="{{url_for('static', filename='images/Breaking-Bad-video.webp')}}" width="60%" height="auto" controls>
       <source src="{{url_for('static', filename='video/BreakingBad _Treiler.mp4')}}" type="video/mp4" />
     </video>
-  </section>
+
+  </div>
 </div>
 
 {%endblock%}

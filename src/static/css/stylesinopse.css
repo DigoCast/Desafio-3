@@ -1,3 +1,74 @@
-body{
-    height: 300vh;
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+body {
+  height: auto;
+}
+
+.cover {
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  position: relative;
+}
+
+.cover img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+}
+h1 {
+  font-size: 75px;
+}
+.titulo-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 10px;
+  font-family: Anton;
+}
+.tituloum {
+  margin-top: 100px;
+}
+.container-temporadas{
+    margin: 100px 0;
+}
+.img-season1{
+    float: left;
+    margin:0 50px 40px 0;
+}
+.poster-season1{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+    height: auto;
+}
+.img-season2{
+    float: right;
+    margin: 0 0 40px 50px;
+}
+.poster-season2{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    max-width: 650px;
+    height: auto;
+}
+
+.navegacao-interna{
+    margin-top: 50px;
+}    
+.container-conteudo ul{
+    display: flex;
+    justify-content: space-between;
+}
+.container-conteudo li{
+    background-color: #3f663f;
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+.container-conteudo li a{
+    color: #fff;
+    padding: 20px;
 }

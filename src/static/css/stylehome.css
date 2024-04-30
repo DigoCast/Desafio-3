@@ -1,78 +1,94 @@
-.container-conteudo{
-    color: #fff;
-    max-width: 80%;
-    margin: 0 10%;
+.container-conteudo {
+  color: #fff;
+  max-width: 80%;
+  margin: 0 10%;
 }
-.carrousel{
-    z-index: 0;
-
+.carrousel {
+  z-index: 0;
 }
-.slide{
-    z-index: 0;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+.slide {
+  z-index: 0;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
 }
-h1{
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-
-.image-cover{
-    max-height: 100vh;
-    mask-image:none;
-    image-rendering: auto;
-}
-.container-introducao{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.poster-home{
-    max-width: 300px;
-    height: auto;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
-}
-.introducao{
-    margin: 150px 0;
-}
-.texto-introducao{
-    max-width: 60%;
-    text-align: justify;
-    font-size: 17px;
-    margin: 5px;
-}
-p{
-    text-align: justify;
-    font-size: 17px;
-}
-hr{
-    margin: 50px 0px;
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
-.container-card-personagens{
-    margin: 100px 0;
-    flex-wrap: wrap;
+.image-cover {
+  max-height: 100vh;
+  mask-image: none;
+  image-rendering: auto;
 }
-.texto-personagens{
-margin-left: 100px ;
+.container-introducao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.poapo{
-    display: flex;
-    align-items: center;
+.poster-home {
+  max-width: 300px;
+  height: auto;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  float: left;
 }
-.card{
-    background-color: #202830;
+.introducao {
+  margin: 150px 0;
 }
-.text-bg-dark{
-    width: 600px;
+.texto-introducao {
+  max-width: 60%;
+  text-align: justify;
+  font-size: 17px;
+  margin: 5px;
+}
+p {
+  text-align: justify;
+  font-size: 17px;
+}
+hr {
+  margin: 50px 0px;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
+.container-card-personagens {
+  display: flex;
+  margin: 100px 0;
+  flex-wrap: wrap;
 }
-video{
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+.texto-personagens {
+  margin-left: 100px;
+}
+.poapo {
+  display: flex;
+  align-items: center;
+}
+.card {
+  background-color: #202830;
+}
+.text-bg-dark {
+  width: 600px;
+}
 
+a {
+  text-decoration: none;
+}
+video {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.treiler-container {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.disponivel {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #202830;    
+}
+.image-netflix {
+    max-width: 70%;
+    border-radius: 500px;
+    box-shadow: 5px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
 }

@@ -1,15 +1,32 @@
-{%extends "base.html"%} 
+{%extends "base.html"%}
 
-{%block title%} Sinopse {%endblock%} 
+{%block title%} Sinopse {%endblock%}
 
 {%block css%}
-<link rel="stylesheet" href="{{url_for('static', filename='css/stylehome.css')}}"/>
-<link rel="stylesheet"href="{{url_for('static', filename='css/stylepersonagens.css')}}"/>
-{%endblock%} 
+<link rel="stylesheet" href="{{url_for('static', filename='css/stylepersonagens.css')}}"/>
+{%endblock%}
+
 
 {%block header%}
-<li><a href="/"><button type="button" class="btn btn-outline-dark"><img src="https://fontmeme.com/permalink/240426/e4c53e304d5131a96ebf095fbbeddd22.png" alt="fonte-heart-breaking-bad" border="0"></button></a></li>
+<!-- HOME -->
+<li><a href="/"><button type="button" class="btn btn-outline-dark"><img
+                src="https://fontmeme.com/permalink/240426/e4c53e304d5131a96ebf095fbbeddd22.png"
+                alt="fonte-heart-breaking-bad" border="0"></button></a></li>
 {%endblock%}
 
 {%block content%}
+<div class="cover">
+    <img src="{{url_for('static', filename='images/personagens.jpg')}}" alt="">
+    <div class="titulo-cover">
+        <h1>Personagens e Elenco</h1>
+    </div>
+</div>
+<div class="container-conteudo">
+
+
+    <div class="spinner-border m-5" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+      
+</div>
 {%endblock%}
