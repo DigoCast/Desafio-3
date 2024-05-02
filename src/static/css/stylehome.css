@@ -32,9 +32,10 @@ h1 {
   height: auto;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
   float: left;
+  margin-bottom: 20px;
 }
 .introducao {
-  margin: 150px 0;
+  margin: 100px 0;
 }
 .texto-introducao {
   max-width: 60%;
@@ -49,27 +50,59 @@ p {
 hr {
   margin: 50px 0px;
 }
-.card-title{
-    color: #fff;
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 60%; 
+  float: left;
+  margin: 20px 20%;
+  background-color: #202830;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+
 }
-.container-card-personagens {
-  display: flex;
-  margin: 100px 0;
-  flex-wrap: wrap;
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color:  white;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  float: left;
+
 }
+
+.card:hover .overlay {
+  opacity: 1; 
+}
+
+.overlay h2,
+.overlay p {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
 .texto-personagens {
-  margin-left: 100px;
+  max-width: 80%;
+  margin:  0 10%
 }
 .poapo {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.card {
-  background-color: #202830;
-}
-.text-bg-dark {
-  width: 600px;
-}
+
+
 
 a {
   text-decoration: none;
@@ -93,4 +126,14 @@ video {
     border-radius: 500px;
     box-shadow: 5px rgba(0, 0, 0, 0.5);
     margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-item{
+    margin-top: 90px;
+    transition: 0.4s;
+  }
+  .texto-introducao {
+    width: 100%;
+  }
 }

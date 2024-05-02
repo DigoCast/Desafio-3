@@ -15,3 +15,7 @@ $(window).on("scroll", function() {
           $('nav').removeClass('black');
     }
 })
+
+function toggleText(card) {
+      card.classList.toggle('active');
+}
